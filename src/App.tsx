@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from "@ui/button/button";
+
 
 function App() {
     return (
@@ -7,7 +9,7 @@ function App() {
                 Header
             </header>
             <main>
-                Main
+                <Button />
             </main>
             <footer>
                 Footer
