@@ -1,0 +1,1 @@
+The Layout is here: https://www.figma.com/design/pozksDC9hbmJHthzxNBfZj/Taskboard---Task-Dashboard-UI-UX-KIT?node-id=2045-969&node-type=FRAME&t=4bmYtxvw3Rl9ca7f-0
