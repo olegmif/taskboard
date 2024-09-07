@@ -21,8 +21,20 @@
     "jsx": "react-jsx",
     "baseUrl": "./",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@ui/*": ["src/components/common/ui/*"]
+      "@app/*": ["src/app/*"],
+      "@providers/*": ["src/app/providers/*"],
+      "@store/*": ["src/app/store/*"],
+      "@config/*": ["src/app/config/*"],
+      "@api/*": ["src/app/api/*"],
+      "@styles/*": ["src/app/styles/*"],
+      "@pages/*": ["src/pages/*"],
+      "@features/*": ["src/features/*"],
+      "@shared/*": ["src/shared/*"],
+      "@ui/*": ["src/shared/ui/*"],
+      "@lib/*": ["src/shared/lib/*"],
+      "@types/*": ["src/shared/types/*"],
+      "@entities/*": ["src/entities/*"],
+      "@widgets/*": ["src/widgets/*"]
     }
   },
   "include": [
