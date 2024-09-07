@@ -56,6 +56,7 @@ function getAdditionalModulePaths(options = {}) {
  */
 function getWebpackAliases(options = {}) {
   const baseUrl = options.baseUrl;
+  const aliasesPaths = options.paths || {};
 
   if (!baseUrl) {
     return {};
@@ -63,8 +64,17 @@ function getWebpackAliases(options = {}) {
 
   const baseUrlResolved = path.resolve(paths.appPath, baseUrl);
 
+
+  const aliases = Object.keys(aliasesPaths).reduce((aliases, key) => {
+    const aliasKey = key.replace('/*', '');
+    const aliasPath = path.resolve(baseUrlResolved, aliasesPaths[key][0].replace('/*', ''));
+    aliases[aliasKey] = aliasPath;
+    return aliases
+  }, {});
+
   if (path.relative(paths.appPath, baseUrlResolved) === '') {
     return {
+      ...aliases,
       src: paths.appSrc,
     };
   }

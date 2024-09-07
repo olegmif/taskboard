@@ -19,10 +19,10 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-
+    "baseUrl": "./",
     "paths": {
-      "@components/*": ["./src/components/*"],
-      "@ui/*": ["./src/components/common/ui/*"]
+      "@components/*": ["src/components/*"],
+      "@ui/*": ["src/components/common/ui/*"]
     }
   },
   "include": [
